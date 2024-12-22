@@ -7,30 +7,6 @@ namespace CS_JUN_1
 {
 	internal class Interpolation
 	{
-		public static string Rep_Q(string[] term)
-		{
-			bool isRepid = true;
-
-			string newEnter = "";
-
-			while(isRepid)
-			{
-				newEnter = Console.ReadLine();
-
-				for (int i = 0; i < term.Length; i++)
-				{
-					if(newEnter.ToLower() == term[i].ToLower())
-					{
-						isRepid = false;
-					}
-				}
-
-				Console.WriteLine("Некоректный ответ, попробуйте еще раз");
-			}
-
-			return newEnter;
-
-		}
 		static void Main(string[] args)
 		{
 			string[] enters = new string[10];
