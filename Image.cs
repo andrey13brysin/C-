@@ -4,19 +4,24 @@ using System.Text;
 
 namespace CS_JUN_1
 {
-	internal class Img
+	internal class interpolation
 	{
 		static void Main(string[] args)
 		{
-            int maxImageInRow = 3;
-            System.Console.WriteLine($"Max image in row: {maxImageInRow}");
+			int maxImageInRow = 3;
+			System.Console.WriteLine($"Max image in row: {maxImageInRow}");
 
-		    int imageCount = 52;
-            System.Console.WriteLine($"Image Count: {imageCount}");
-		    int excessImage = imageCount % maxImageInRow;;
+			int imageCount = 52;
+			System.Console.WriteLine($"Image Count: {imageCount}");
+
+			int excessImage = imageCount % maxImageInRow; ;
+			int fullRows = imageCount / maxImageInRow;
 
 			Console.WriteLine($"remains: {excessImage}");
-            Console.ReadKey();
+			Console.WriteLine($"fullness of filled rows: {fullRows}");
+
+			Console.ReadKey();
 		}
 	}
 }
+
