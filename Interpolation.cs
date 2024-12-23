@@ -9,21 +9,21 @@ namespace CS_JUN_1
 	{
 		static void Main(string[] args)
 		{
-			Console.Write("как вас зовут? ");
-			string name = Console.ReadLine();
+			System.Console.Write("как вас зовут? ");
+			string name = System.Console.ReadLine();
 
-			Console.Write("где вы работаете? ");
-			string job = Console.ReadLine();
+			System.Console.Write("где вы работаете? ");
+			string job = System.Console.ReadLine();
 
-			Console.Write("вы много знаете? ");
-			string know = Console.ReadLine();
+			System.Console.Write("вы много знаете? ");
+			string know = System.Console.ReadLine();
 
-			Console.Write("как вы спите? ");
-			string sleep = Console.ReadLine();
+			System.Console.Write("как вы спите? ");
+			string sleep = System.Console.ReadLine();
 
 			System.Console.WriteLine($"Вас зовут {name}, вы работаете {job}, вы {know} знаете и {sleep} спите");
 
-			Сonsole.ReadKey();
+			System.Сonsole.ReadKey();
 		}
 	}
 }
