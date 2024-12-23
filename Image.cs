@@ -8,13 +8,13 @@ namespace CS_JUN_1
 	{
 		static void Main(string[] args)
 		{
-            int MaxImageInRow = 3;
+            int maxImageInRow = 3;
             System.Console.WriteLine($"Max image in row: {MaxImageInRow}");
 
 		    int imageCount = 52;
-            System.Console.WriteLine($"Max image in row: {imageCount}");
-		    int excess;
-			excess = imageCount % MaxImageInRow;
+            System.Console.WriteLine($"Image Count: {imageCount}");
+		    int excess = imageCount % MaxImageInRow;;
+
 			Console.WriteLine($"remains: {excess}");
             Console.ReadKey();
 		}
