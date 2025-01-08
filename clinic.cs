@@ -9,8 +9,7 @@ namespace CS_JUN_1
         static void Main(string[] args)
 		{
             int receptionTime = 10;
-            int minute = 1;
-            int hour = 60 * minute;
+            int minutesInHour = 60;
 
             System.Console.Write("enter the number of people in the queue: ");
             int peopleInQueue = Convert.ToInt32(Console.ReadLine());
