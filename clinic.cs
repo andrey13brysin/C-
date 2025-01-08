@@ -14,8 +14,8 @@ namespace CS_JUN_1
             System.Console.Write("enter the number of people in the queue: ");
             int peopleInQueue = Convert.ToInt32(Console.ReadLine());
 
-            int hoursToReception = (peopleInQueue * receptionTime) / hour;
-            int minutesToReception = (peopleInQueue * receptionTime) % hour;
+            int hoursToReception = (peopleInQueue * receptionTime) / minutesInHour;
+            int minutesToReception = (peopleInQueue * receptionTime) % minutesInHour;
 
             System.Console.Write($"You have to stand in line for {hoursToReception} hours {minutesToReception} minutes ");
             System.Console.ReadKey();
