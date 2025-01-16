@@ -10,15 +10,19 @@ namespace CS_JUN_1
 		{
 			int randomNumber = 0;
 			int numberSum = 0;
+            int firstDivider = 3;
+            int secondDivider = 5;
+            int maxNumber = 100;
+            int minNumber = 0;  
 
 			Random random = new Random();
-			randomNumber = random.Next(0, 100);
+			randomNumber = random.Next(minNumber, maxNumber);
 
 			Console.WriteLine($"Random number: {randomNumber}");
 
 			for (int i = 0; i <= randomNumber; i++)
 			{
-				if(i % 3 == 0 || i % 5 == 0)
+				if(i % firstDivider == 0 || i % secondDivider == 0)
 				{
 					numberSum += i;
 				}

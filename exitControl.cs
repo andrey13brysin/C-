@@ -9,17 +9,13 @@ namespace CS_JUN_1
 		static void Main(string[] args)
 		{
 			string requiredValue = "exit";
-			bool requiredValueIsEntered = false;
+			bool isExit = false;
+			string enterValue = "";
 
-			while(!requiredValueIsEntered)
+			while (enterValue != requiredValue)
 			{
-				Console.WriteLine("for exit enter \"exit\" ");
-				string enterValue = Console.ReadLine();
-
-				if( enterValue == requiredValue )
-				{
-					requiredValueIsEntered = true;
-				}
+				Console.WriteLine($"for exit enter \"{requiredValue}\" ");
+				enterValue = Console.ReadLine();
 			}
 		}
 	}

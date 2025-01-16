@@ -21,11 +21,11 @@ namespace CS_JUN_1
 			{
 				Console.WriteLine("Commands:");
 				Console.WriteLine("-------------");
-				Console.WriteLine("output first");
-				Console.WriteLine("output second");
-				Console.WriteLine("random");
-				Console.WriteLine("Clear");
-				Console.WriteLine("exit");
+				Console.WriteLine(OutputStringFirstCommand);
+				Console.WriteLine(OutputStringSecondCommand);
+				Console.WriteLine(DisplayRandomNumberCommand);
+				Console.WriteLine(ClearConsoleCommand);
+				Console.WriteLine(ExitCommand);
 				Console.WriteLine("-------------");
 
 				Console.WriteLine("Enter command");
