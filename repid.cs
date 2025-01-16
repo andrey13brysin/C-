@@ -18,7 +18,6 @@ namespace CS_JUN_1
 			message = Console.ReadLine();
 			Console.WriteLine("-----------------");
 
-
 			for (int i = 0; i < repitCount; i++)
 			{
 				Console.WriteLine(message);
