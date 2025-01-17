@@ -14,10 +14,10 @@ namespace CS_JUN_1
 			const string ClearConsoleCommand = "clear";
 			const string ExitCommand = "exit";
 
-			bool isExit = false;
+			bool isRunning = false;
 			Random random = new Random();
 
-			while(!isExit) 
+			while (isRunning == false)
 			{
 				Console.WriteLine("Commands:");
 				Console.WriteLine("-------------");
@@ -33,28 +33,23 @@ namespace CS_JUN_1
 
 				switch (command)
 				{
-					case OutputStringFirstCommand:
-						{
-							Console.WriteLine("pricorm\n");
-						} break;
-					case OutputStringSecondCommand:
-						{
-							Console.WriteLine("dyrey\n");
-						}break;
+					case OutputStringFirstCommand: 
+						Console.WriteLine("pricorm\n"); 
+						break;
+					case OutputStringSecondCommand: 
+						Console.WriteLine("dyrey\n"); 
+						break;
 					case DisplayRandomNumberCommand:
-						{
-							int randomNumber = random.Next();
-							Console.WriteLine($"random number: {randomNumber}\n");
-						}break;
+						int randomNumber = random.Next();
+						Console.WriteLine($"random number: {randomNumber}\n");
+						break;
 					case ClearConsoleCommand:
-						{
-							Console.Clear();
-						}break;
+						Console.Clear();
+						break;
 					case ExitCommand:
-						{
-							isExit = true;
-						}break;
-				}			
+						isRunning = true;
+						break;
+				}
 			}
 		}
 	}
