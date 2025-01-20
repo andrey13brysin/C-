@@ -59,6 +59,7 @@ namespace CS_JUN_1
 					case ConvertFranksToDollarsCommand:
 						Console.WriteLine("how many currency to exchange?");
 						countСurrencyToConvert = Convert.ToSingle(Console.ReadLine());
+						
 						if(frankBalance - countСurrencyToConvert >= 0)
 						{
 							frankBalance -= countСurrencyToConvert;
@@ -69,9 +70,11 @@ namespace CS_JUN_1
 							Console.WriteLine("insufficient funds");
 						}
 						break;
+
 					case ConvertDollarsToFranksCommand:
 						Console.WriteLine("how many Сurrency to exchange?");
 						countСurrencyToConvert = Convert.ToSingle(Console.ReadLine());
+
 						if (dollarBalance - countСurrencyToConvert >= 0)
 						{
 							dollarBalance -= countСurrencyToConvert;
@@ -82,9 +85,11 @@ namespace CS_JUN_1
 							Console.WriteLine("insufficient funds");
 						}
 						break;
+
 					case ConvertRublesToDollarsCommand:
 						Console.WriteLine("how many Сurrencyto exchange?");
 						countСurrencyToConvert = Convert.ToSingle(Console.ReadLine());
+
 						if (rubleBalance - countСurrencyToConvert >= 0)
 						{
 							rubleBalance -= countСurrencyToConvert;
@@ -95,9 +100,11 @@ namespace CS_JUN_1
 							Console.WriteLine("insufficient funds");
 						}
 						break;
+
 					case ConvertDollarsToRublesCommand:
 						Console.WriteLine("how many Сurrencyto exchange?");
 						countСurrencyToConvert = Convert.ToSingle(Console.ReadLine());
+
 						if (rubleBalance - countСurrencyToConvert >= 0)
 						{
 							dollarBalance -= countСurrencyToConvert;
@@ -108,9 +115,11 @@ namespace CS_JUN_1
 							Console.WriteLine("insufficient funds");
 						}
 						break;
+
 					case ConvertFranksToRublesCommand:
 						Console.WriteLine("how many Сurrencyto exchange?");
 						countСurrencyToConvert = Convert.ToSingle(Console.ReadLine());
+
 						if (frankBalance - countСurrencyToConvert >= 0)
 						{
 							frankBalance -= countСurrencyToConvert;
@@ -121,9 +130,11 @@ namespace CS_JUN_1
 							Console.WriteLine("insufficient funds");
 						}
 						break;
+
 					case ConvertRublesToFranksCommand:
 						Console.WriteLine("how many Сurrencyto exchange?");
 						countСurrencyToConvert = Convert.ToSingle(Console.ReadLine());
+
 						if (rubleBalance - countСurrencyToConvert >= 0)
 						{
 							rubleBalance -= countСurrencyToConvert;
@@ -134,6 +145,7 @@ namespace CS_JUN_1
 							Console.WriteLine("insufficient funds");
 						}
 						break;
+
 					case ExitCommand:
 						isRunning = true;
 						break;
