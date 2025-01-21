@@ -9,21 +9,22 @@ namespace CS_JUN_1
 		static void Main(string[] args)
 		{
 			int pow = 1;
+			int termPow = 2;
 			int number = 0;
-			int TwoInPow = 2;
+			int numberToPow = 2;
+			int maxNumber = 101;
+			Random random = new Random();
+			number = random.Next(0, maxNumber);
 
-			Random rand = new Random();
-			number = rand.Next(0, 101);
-
-			while(TwoInPow < number)
+			while(numberToPow <= number)
 			{
-				TwoInPow *= 2;
+				numberToPow *= termPow;
 				pow++;
 			}
 
 			Console.WriteLine($"Number: {number}");
 			Console.WriteLine($"Pow: {pow}");
-			Console.WriteLine($"Two in pow: {TwoInPow}");
+			Console.WriteLine($"Number to pow: {numberToPow}");
 		}
 	}
 }
