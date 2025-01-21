@@ -9,28 +9,25 @@ namespace CS_JUN_1
 		static void Main(string[] args)
 		{
 			int beginNumberRange = 10;
-			int endNumberRange = 25;
+			int endNumberRange = 26;
+
 			int multiplesRangeBegin = 50;
 			int multiplesRangeEnd = 150;
-			int repidCount = 0;
+
 			int number = 0;
 			int multiplesCount = 0;
 
 			Random random = new Random();
 			number = random.Next(beginNumberRange, endNumberRange);
+
 			Console.WriteLine($"number: {number}");
 
-			for(int i = 0; i <= multiplesRangeEnd; i++)
+			for (int i = 0; i <= multiplesRangeEnd; i += number)
 			{
-				if (repidCount == number)
+				if (i >= multiplesRangeBegin)
 				{
-					if(i >= multiplesRangeBegin)
-					{
-						multiplesCount++;
-					}
-					repidCount = 0;
+					multiplesCount++;
 				}
-				repidCount++;
 			}
 
 			Console.WriteLine($"multiplesCount: {multiplesCount}");
