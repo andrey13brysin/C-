@@ -8,12 +8,12 @@ namespace CS_JUN_1
 	{
 		static void Main(string[] args)
 		{
-			const string ConvertFranksToDollarsCommand = "convert franks to dollars";
-			const string ConvertDollarsToFranksCommand = "convert dollars to franks";
-			const string ConvertRublesToDollarsCommand = "convert rubles to dollars";
-			const string ConvertDollarsToRublesCommand = "convert dollars to rubles";
-			const string ConvertFranksToRublesCommand = "convert franks to rubles";
-			const string ConvertRublesToFranksCommand = "convert rubles to franks";
+			const string ConvertFranksToDollarsCommand = "1";
+			const string ConvertDollarsToFranksCommand = "2";
+			const string ConvertRublesToDollarsCommand = "3";
+			const string ConvertDollarsToRublesCommand = "4";
+			const string ConvertFranksToRublesCommand = "5";
+			const string ConvertRublesToFranksCommand = "6";
 			const string ExitCommand = "exit";
 
 			float frankToDollarRate = 1.09f;
@@ -27,19 +27,21 @@ namespace CS_JUN_1
 			float rubleBalance = 1000.0f;
 			float dollarBalance = 1000.0f;
 
+			string delim = "-------------";
+
 			bool isRunning = false;
 
 			while (isRunning == false)
 			{
 				Console.WriteLine("your balance:");
-				Console.WriteLine("-------------");
+				Console.WriteLine(delim);
 				Console.WriteLine($"franks: {frankBalance}");
 				Console.WriteLine($"rubles: {rubleBalance}");
 				Console.WriteLine($"dollars: {dollarBalance}");
-				Console.WriteLine("-------------");
+				Console.WriteLine(delim);
 
 				Console.WriteLine("Commands:");
-				Console.WriteLine("-------------");
+				Console.WriteLine(delim);
 				Console.WriteLine(ConvertFranksToDollarsCommand);
 				Console.WriteLine(ConvertDollarsToFranksCommand);
 				Console.WriteLine(ConvertRublesToDollarsCommand);
@@ -47,7 +49,7 @@ namespace CS_JUN_1
 				Console.WriteLine(ConvertFranksToRublesCommand);
 				Console.WriteLine(ConvertRublesToFranksCommand);
 				Console.WriteLine(ExitCommand);
-				Console.WriteLine("-------------");
+				Console.WriteLine(delim);
 
 				Console.WriteLine("Enter command");
 				string command = Console.ReadLine().ToLower();

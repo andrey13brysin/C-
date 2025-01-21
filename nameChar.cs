@@ -8,29 +8,27 @@ namespace CS_JUN_1
 	{
 		static void Main(string[] args)
 		{
-			string userName;
+			string userName = "";
+			string nameInBorder = "";
+			string border = "";
 			char userChar;
-			int nameLenght = 0;
-			int i = 0;
 
 			Console.Write("Enter your name: ");
 			userName = Console.ReadLine();
-			nameLenght = userName.Length;
 
 			Console.Write("Enter char: ");
 			userChar = Console.ReadLine()[0];
 
-			for(i = 0; i < nameLenght + 2; i++)
+			nameInBorder = $"{userChar}{userName}{userChar}";
+
+			for (int i = 0; i < nameInBorder.Length; i++)
 			{
-				Console.Write(userChar);
+				border += userChar;
 			}
 
-			Console.WriteLine($"\n{userChar}{userName}{userChar}");
-
-			for (i = 0; i < nameLenght + 2; i++)
-			{
-				Console.Write(userChar);
-			}
+			Console.WriteLine(border);
+			Console.WriteLine(nameInBorder);
+			Console.WriteLine(border);
 		}
 	}
 }
